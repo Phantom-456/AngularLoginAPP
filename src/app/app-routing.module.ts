@@ -9,8 +9,9 @@ import { UnauthorizedAccessComponent } from './unauthorized-access/unauthorized-
 
 
 const routes: Routes = [
-  // { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
+  { path: 'signin', component: LoginComponent },
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard], data: { roles: ['admin'] }},
   { path: 'signup', component: SignupComponent},
   { path: 'ControlPage', component:  ControlPageComponent},

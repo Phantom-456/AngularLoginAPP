@@ -14,6 +14,7 @@ export class SignupComponent {
     signUp(): void {
 
       this.auth.signUp(this.username, this.password);
+      this.router.navigate(['login']);
     }
   }
 
