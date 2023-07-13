@@ -1,0 +1,19 @@
+{
+  "accounts": [
+    {
+      "username": "john_doe",
+      "password": "password123",
+      "access": "admin"
+    },
+    {
+      "username": "jane_smith",
+      "password": "secret456",
+      "access": "user"
+    },
+    {
+      "username": "",
+      "password": "",
+      "access": "user"
+    }
+  ]
+}

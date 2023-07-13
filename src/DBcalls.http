@@ -1,0 +1,41 @@
+GET http://localhost:3000/accounts
+
+
+### PUT /accounts
+
+# curl -X PUT
+#  http://localhost:3000/accounts
+#  -H 'Content-Type: application/json'
+#  -H 'Accept: application/json'
+#  -d '[
+#    {"username":"john_doe", "password":"password123"},
+#    {"username":"jane_smith", "password":"secret456"},
+#    {"username":"", "password":""},
+#    {"username":"great", "password":"guy"}
+#  ]'
+PATCH http://localhost:3000/accounts
+Accept: application/json
+Content-Type: application/json
+
+[
+  {
+    "username": "john_doe",
+    "password": "password123"
+  },
+  {
+    "username": "jane_smith",
+    "password": "secret456"
+  },
+  {
+    "username": "",
+    "password": ""
+  },
+  {
+    "username": "great",
+    "password": "guy"
+  }
+]
+
+###
+
+
