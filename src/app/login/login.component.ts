@@ -23,5 +23,6 @@ export class LoginComponent {
 
   showSignUp(): void {
     console.log('Sign up clicked');
+    this.router.navigate(['signup']);
   }
 }
